@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<form action="#" method="post" th:action="@{edit}" th:object="${user}">
+    <label for="id" >id: </label>
+    <input readonly type="text" th:field="*{id}" id="id" placeholder="id"/>
+<br/>
+    <label for="name">Name: </label>
+    <input type="text" th:field="*{name}" id="name" required/>
+    <br/>
+    <input type="submit" value="Edit!"/>
+</form>
+</body>
+</html>
